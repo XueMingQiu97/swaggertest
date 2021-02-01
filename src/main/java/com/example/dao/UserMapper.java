@@ -9,6 +9,13 @@ import java.util.List;
 public interface UserMapper extends BaseMapper<User> {
 
     List<User> selectAll();
+
+    /**
+     * kaifa
+     * @param id
+     * @param username
+     * @return
+     */
     User selectByIdAndName( String id,String username);
     int updateNameById(String username, Integer id);
     int insert(User user);
